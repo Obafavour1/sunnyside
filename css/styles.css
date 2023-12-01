@@ -28,7 +28,7 @@ body{
     font-size: 18px;
     line-height: 26px;
     overflow-x: hidden;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', 'sans';
 }
 
 h2, h3, h4, h5{
@@ -88,6 +88,7 @@ nav{
 
 nav h1 a{
     color: var(--White);
+    font-weight: 900;
 }
 
 .nav-item li{
@@ -107,7 +108,6 @@ nav h1 a{
     background-color: white;
     border-radius: 30px;
     padding: 10px 20px;
-    margin-left: 10px;
 }
 
 .contact:hover{
@@ -321,4 +321,22 @@ h3{
 
 #footer ul{
     display: flex;
+}
+
+.scroll{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+@keyframes CSSscrollReveal{
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

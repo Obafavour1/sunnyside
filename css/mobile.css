@@ -23,7 +23,7 @@
         /* flex-direction: column;
         justify-content: center;
         align-items: center; */
-        background: linear-gradient( rgb(0, 255, 242), rgb(210, 224, 10));
+        background: linear-gradient( to right, rgb(0, 255, 242), rgb(210, 224, 10));
         position: fixed;
         padding: 10px 10%;
         /* position: absolute; */
@@ -39,14 +39,14 @@
     }
 
     .menu{
-        background-color: white;
+        background: linear-gradient( to left, rgb(177, 229, 238), rgb(10, 181, 224));
         text-align: center;
         width: 80%;
-        margin: 100px auto 0px auto;
+        margin: 10px auto 0px auto;
         padding: 30px;
         border-radius: 8px;
-        margin-top: -200%;
-        transition: all 0.7s ease-in-out;
+        margin-left: -100%;
+        transition: all 0.35s ease-in-out;
         box-shadow: 3px 3px 8px grey;
     }
 
@@ -95,7 +95,7 @@
     }
 
     #checkbtn:checked ~ .menu{
-        margin-top: 0%;
+        margin-left: 10%;
     }
 
     #checkbtn:checked ~ .openmenu{
@@ -109,6 +109,10 @@
 
     .menuu{
         display: block;
+    }
+
+    #showcase{
+        padding-top: 150px;
     }
 
 
